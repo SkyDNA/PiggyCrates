@@ -33,7 +33,7 @@ class Main extends PluginBase
         $this->allowCrateChanges = $this->getConfig()->getNested("allow-crate-changes");
         $this->getServer()->getCommandMap()->register("key", new KeyCommand("key", $this), "key");
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
-        $this->getLogger()->info(TextFormat::GREEN . "Enabled.");
+        $this->getLogger()->info(TextFormat::GREEN . "Enabled");
     }
 
     public function initCrates()
